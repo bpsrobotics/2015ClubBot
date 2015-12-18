@@ -13,10 +13,10 @@ import org.usfirst.frc.team1510.robot.commands.*;
 public final class Drive extends Subsystem {
 	
 	private static final int PULSE_PER_ROT_ENCODER = 8;
-	private static final CANTalon frontLeft = new CANTalon(1);
-	private static final CANTalon frontRight = new CANTalon(2);
-	private static final CANTalon rearRight = new CANTalon(3);
-	private static final CANTalon rearLeft = new CANTalon(4);
+	private static final CANTalon frontLeft = new CANTalon(3);
+	private static final CANTalon frontRight = new CANTalon(4);
+	private static final CANTalon rearRight = new CANTalon(2);
+	private static final CANTalon rearLeft = new CANTalon(1);
 	private static final RobotDrive drive = new RobotDrive(frontLeft,rearLeft,frontRight,rearRight);
 	private static final Encoder[] encoders = {new Encoder(1,2),new Encoder(3,4),new Encoder(5,6),new Encoder(7,8)};
 	private final double wheelSize;
